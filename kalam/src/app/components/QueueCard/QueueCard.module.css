@@ -1,0 +1,36 @@
+.queueCardContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 1vw;
+
+}
+
+.textContainer{
+    /* border: 2px solid green; */
+
+}
+
+.textContainer>h5{
+margin-left: 1vw;
+color: aliceblue;
+font-size: 1vw;
+}
+.textContainer>h6{
+margin-left: 1.2vw;
+font-size: 0.8vw;
+color: rgb(87, 87, 87);
+}
+
+.image{
+    height: 50px;
+    width: 60px;
+}
+
+.queueCardContainer>h6{
+    position: absolute;
+    right: 0;
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    font-size: 0.9vw;
+}

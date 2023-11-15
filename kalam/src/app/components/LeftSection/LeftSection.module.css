@@ -1,0 +1,52 @@
+.leftSection{
+
+    height: 100vh;
+    width: 20vw;
+    background-color: #101011;
+    color: rgb(163, 163, 163);
+}
+
+.features{
+    margin-top: 2vw;
+}
+.features>h6{
+    margin-left: 2vw;
+}
+
+.library{
+    margin-top: 2vw;
+}
+
+.library>h6{
+    margin-left: 2vw;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    border: 2px solid blue;
+}
+
+.header{
+    display: flex;
+    /* border:2px solid red; */
+    padding-top: 2vw;
+}
+
+.logo{
+    /* border: 2px solid blueviolet; */
+}
+
+.musicQueue{
+    /* border:2px solid yellow; */
+margin-left: 10vw;
+margin-top:0.5vw;
+}
+
+.image{
+    height: 50px;
+    margin-left: 2vw;
+}
