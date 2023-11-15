@@ -8,7 +8,7 @@ import Search from '../Search/Search';
 import Card from '../Card/Card';
 import { Lato } from 'next/font/google';
 
-const lato=Lato({
+const lato = Lato({
     subsets: ['latin-ext'],
     weight: ['400', '700'],
 })
@@ -19,28 +19,45 @@ const MiddleSection = () => {
             <div className={MiddleSectionStyles.header}>
                 <div className="moveBtns">
                     <IconButton>
-                        <KeyboardArrowLeftIcon className={MiddleSectionStyles.arrowBtn}/>
+                        <KeyboardArrowLeftIcon className={MiddleSectionStyles.arrowBtn} />
                     </IconButton>
                     <IconButton>
-                        <KeyboardArrowRightIcon className={MiddleSectionStyles.arrowBtn}/>
+                        <KeyboardArrowRightIcon className={MiddleSectionStyles.arrowBtn} />
                     </IconButton>
                 </div>
-                <Search/>
+                <Search />
                 <div className='dots'>
                     <IconButton>
-                        <MoreHorizIcon sx={{fontSize:"3vw",marginTop:"3vw"}} className={MiddleSectionStyles.dots}/>
+                        <MoreHorizIcon sx={{ fontSize: "3vw", marginTop: "3vw" }} className={MiddleSectionStyles.dots} />
                     </IconButton>
                 </div>
             </div>
             <div className={MiddleSectionStyles.middle}>
-            <img className={MiddleSectionStyles.image} src='albumPhoto.jpeg'></img>
+                <img className={MiddleSectionStyles.image} src='albumPhoto.jpeg'></img>
             </div>
             <div className={MiddleSectionStyles.welcome}>
                 <div className={MiddleSectionStyles.welcomeHeadings}>
-                <Typography className={lato.className} variant='h4'>Hello, Thomas</Typography>
-                <Typography className={lato.className} variant='h6'>See All</Typography>
+                    <Typography className={lato.className} variant='h4'>Hello, Thomas</Typography>
+                    <Typography className={lato.className} variant='h6'>See All</Typography>
                 </div>
-                <Card/>
+                <div className={MiddleSectionStyles.musicQueue}>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+                <div className={MiddleSectionStyles.newReleases}>
+                    <div className={MiddleSectionStyles.newReleaseHeading}>
+                        <Typography className={lato.className} variant='h4'>New releases for you</Typography>
+                        <Typography className={lato.className} variant='h6'>See All</Typography>
+                    </div>
+                    <div className={MiddleSectionStyles.musicQueue}>
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
+                </div>
             </div>
             <div className={MiddleSectionStyles.newReleases}></div>
         </div>
