@@ -8,19 +8,12 @@ import { TextField } from '@mui/material';
 const Search = () => {
     return (
         <div className={searchStyles.searchContainer}>
-            <TextField
-            className={searchStyles.search}
-  label="Search for artists, songs, or albums"
-  InputProps={{
-    endAdornment: (
-      <InputAdornment>
-        <IconButton>
+           <form>
+           <IconButton>
           <SearchIcon />
         </IconButton>
-      </InputAdornment>
-    )
-  }}
-/>
+        <input className={searchStyles.search} type="text" placeholder="Search" />
+           </form>
         </div>
     )
 }

@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <div className={styles.description}>
-        <LeftSection/>
+        {/* <LeftSection/>
         <MiddleSection/>
-        <RightSection/>
+        <RightSection/> */}
         <StickyPlayer/>
       </div>
     </main>

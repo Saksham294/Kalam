@@ -1,13 +1,15 @@
 .searchContainer{
-    background-color: white;
-    width: 40vw;
-    border-radius: 30px;
-    margin-top: 3vw;
+background-color: white;
+    margin-top: 3.5vw;
     margin-left: 2vw;
+    border-radius: 30px;
+
     height: 100%;
 }
 
 .search{
     width: 40vw;
     border-radius: 30px;
+    outline: none;
+    border: none;
 }

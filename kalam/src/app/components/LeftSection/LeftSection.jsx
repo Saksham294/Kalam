@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Icon, Typography } from '@mui/material';
 import leftSectionStyles from './LeftSection.module.css'
@@ -25,6 +26,19 @@ function LeftSection() {
   const listItemStyle = {
     paddingRight: '0px', // Adjust the spacing as needed
   };
+// color icon and text: #f68f45 if user selects it
+// color icon and text: #ffffff if user doesn't select it
+
+//there are 6 icons
+
+// 1. home
+// 2. discover
+// 3. collections
+// 4. download
+// 5. favourites
+// 6. local files
+
+
 
   const primary='#f68f45';
   return (
@@ -43,7 +57,7 @@ function LeftSection() {
       <List sx={{paddingLeft:"1vw"}}>
       <ListItem>
         <ListItemIcon>
-          <HomeIcon sx={{color:"#f68f45"}}/>
+          <HomeIcon sx={{color:"#f68f45"}}  />
         </ListItemIcon>
         <ListItemText primary="Home" />
       </ListItem>

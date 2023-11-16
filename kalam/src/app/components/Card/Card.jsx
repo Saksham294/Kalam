@@ -14,17 +14,17 @@ const inter = Inter({
     weight: ['400', '700'],
 })
 
-const Card = (heading,subHeading) => {
+const Card = ({heading,subHeading,img}) => {
     return (
         <div className='productContainer'>
                 <div className="productImg">
-                    <img src='albumPhoto.jpeg'></img>
+                    <img src={img}></img>
                 </div>
                 <a>
                     <div className="productText">
-                        <Typography variant='h5' className={inter.className}>Heading</Typography>
+                        <Typography variant='h5' className={inter.className}>{heading}</Typography>
                         <div className="productParaText">
-                            <p>subheading</p>
+                            <p>{subHeading}</p>
                         </div>
 
                     </div>

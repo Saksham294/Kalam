@@ -17,6 +17,9 @@ import PauseCircleIcon from '@mui/icons-material/PauseCircle';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import { Icon, IconButton, Typography } from '@mui/material';
 import { Lato } from 'next/font/google';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const lato = Lato({
     subsets: ['latin-ext'],
@@ -25,49 +28,60 @@ const lato = Lato({
 
 const StickyPlayer = () => {
 
+    const [isVis, setIsVis] = useState(false);
+
+    useEffect(() => {
+        Aos.init();
+        setTimeout(() => {
+            setIsVis(true);
+        }   , 500);
+    })
     const [clicked, setClicked] = useState(false);
     const [liked, setLiked] = useState(false);
     const [pause, setPause] = useState(false);
-    return (
+
+    const secondary='#f68f45';
+    return isVis? (
         <div className={stickyPlayerStyles.stickyContainer}>
             <div className={stickyPlayerStyles.songContainer}>
+                <img className={stickyPlayerStyles.songImage} src='ts.jpeg'></img>
                 <div className={stickyPlayerStyles.headings}>
-            <Typography variant='h5' className={lato.className}>Song</Typography>
-            <Typography variant='h6' className={lato.className}>Artist</Typography>
+            <Typography variant='h5' className={lato.className}>Delicate</Typography>
+            <Typography variant='h6' className={lato.className}>Taylor Swift</Typography>
                 </div>
             <div className={stickyPlayerStyles.songIcons}>
             {
                 liked ? <IconButton onClick={() => setLiked(!liked)}>
-                    <FavoriteIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                    <FavoriteIcon className={stickyPlayerStyles.iconBtn}/>
                 </IconButton> : <IconButton onClick={() => setLiked(!liked)}>
-                    <FavoriteBorderIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                    <FavoriteBorderIcon className={stickyPlayerStyles.iconBtn}  />
                 </IconButton>
             }
             <IconButton>
-                <AddBoxIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                <AddBoxIcon className={stickyPlayerStyles.iconBtn}  />
             </IconButton>
             </div>
             </div>
             <div className={stickyPlayerStyles.player}>
                 <div className={stickyPlayerStyles.playerBtns}>
                 <IconButton>
-                    <ShuffleIcon className={stickyPlayerStyles.playerBtn} color='secondary' />
+                    <ShuffleIcon className={stickyPlayerStyles.playerBtn}  />
                 </IconButton>
                 <IconButton>
-                    <SkipPreviousIcon className={stickyPlayerStyles.playerBtn} color='secondary' />
+                    <SkipPreviousIcon className={stickyPlayerStyles.playerBtn}  />
                 </IconButton>
                 {
                     pause ? <IconButton onClick={() => setPause(!pause)}>
-                        <PauseCircleIcon className={stickyPlayerStyles.pauseBtn} color='secondary' />
+                        <PauseCircleIcon className={stickyPlayerStyles.pauseBtn} />
                     </IconButton> : <IconButton onClick={() => setPause(!pause)}>
-                        <PlayCircleIcon className={stickyPlayerStyles.pauseBtn} color='secondary' />
+                        <PlayCircleIcon className={stickyPlayerStyles.pauseBtn}  />
                     </IconButton>
                 }
                 <IconButton>
-                    <SkipNextIcon className={stickyPlayerStyles.playerBtn} color='secondary' />
+                    <SkipNextIcon className={stickyPlayerStyles.playerBtn} />
                 </IconButton>
                 <IconButton>
-                    <LoopIcon className={stickyPlayerStyles.playerBtn} color='secondary' />
+                    <LoopIcon className={stickyPlayerStyles.playerBtn} />
                 </IconButton>
                 </div>
                 <div className={stickyPlayerStyles.progressBar}>
@@ -78,9 +92,9 @@ const StickyPlayer = () => {
             <div className={stickyPlayerStyles.misc}>
                 {
                     clicked ? <IconButton onClick={() => setClicked(!clicked)}>
-                        <VolumeUpIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                        <VolumeUpIcon className={stickyPlayerStyles.iconBtn}/>
                     </IconButton> : <IconButton onClick={() => setClicked(!clicked)}>
-                        <VolumeMuteIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                        <VolumeMuteIcon className={stickyPlayerStyles.iconBtn}  />
                     </IconButton>
                 }
                {/**
@@ -93,24 +107,24 @@ const StickyPlayer = () => {
                     id="volume-progress"
                 >
                     <div class={stickyPlayerStyles.progress} id="volume-progress"></div>
-                    
+
                 </div>
 
 
                 <IconButton >
-                    <KeyboardVoiceIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                    <KeyboardVoiceIcon className={stickyPlayerStyles.iconBtn}  />
                 </IconButton>
                 <IconButton >
-                    <AirplayIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                    <AirplayIcon className={stickyPlayerStyles.iconBtn}  />
                 </IconButton>
                 <IconButton >
-                    <ShareIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
+                    <ShareIcon className={stickyPlayerStyles.iconBtn} />
                 </IconButton>
 
             </div>
 
         </div>
-    )
+    ):null
 }
 
 export default StickyPlayer
