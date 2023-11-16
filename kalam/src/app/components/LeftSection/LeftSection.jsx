@@ -26,19 +26,6 @@ function LeftSection() {
   const listItemStyle = {
     paddingRight: '0px', // Adjust the spacing as needed
   };
-// color icon and text: #f68f45 if user selects it
-// color icon and text: #ffffff if user doesn't select it
-
-//there are 6 icons
-
-// 1. home
-// 2. discover
-// 3. collections
-// 4. download
-// 5. favourites
-// 6. local files
-
-
 
   const primary='#f68f45';
   return (
@@ -48,7 +35,7 @@ function LeftSection() {
         <img className={leftSectionStyles.image} src='logo.png'></img>
         </div>
         <div className={leftSectionStyles.musicQueue}>
-          <QueueMusicIcon fontSize='large'/>
+          <QueueMusicIcon sx={{fontSize:"2.5vw"}}/>
         </div>
         </div>
       <div className={leftSectionStyles.features}>
@@ -56,22 +43,25 @@ function LeftSection() {
       
       <List sx={{paddingLeft:"1vw"}}>
       <ListItem>
-        <ListItemIcon>
-          <HomeIcon sx={{color:"#f68f45"}}  />
+        <ListItemIcon sx={{minWidth:"4vw"}}>
+          <HomeIcon sx={{color:"#f68f45",fontSize:"1.5vw"}}   />
         </ListItemIcon>
-        <ListItemText primary="Home" />
+        <ListItemText disableTypography
+        primary={<Typography variant="body2" style={{fontSize:"1.5vw", color: '#a3a3a3' }}>Home</Typography>}/>
       </ListItem>
       <ListItem >
-        <ListItemIcon>
-          <ExploreIcon  sx={{color:"#f68f45"}}  />
+        <ListItemIcon  sx={{minWidth:"4vw"}}>
+          <ExploreIcon  sx={{color:"#f68f45",fontSize:"1.5vw"}}   />
         </ListItemIcon>
-        <ListItemText primary="Discover" />
+        <ListItemText disableTypography
+        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Discover</Typography>}/>
       </ListItem>
       <ListItem >
-        <ListItemIcon>
-         <CollectionsIcon   sx={{color:"#f68f45"}}  />
+        <ListItemIcon  sx={{minWidth:"4vw"}}>
+         <CollectionsIcon  sx={{color:"#f68f45",fontSize:"1.5vw"}}  />
         </ListItemIcon>
-        <ListItemText primary="Collections" />
+        <ListItemText disableTypography
+        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Collections</Typography>}/>
       </ListItem>
     </List>
        
@@ -81,22 +71,25 @@ function LeftSection() {
       <Typography variant='h6' className={mukta.className}>Library</Typography>
       <List sx={{paddingLeft:"1vw"}}>
       <ListItem >
-        <ListItemIcon>
-          <DownloadIcon sx={{color:"#f68f45"}}/>
+        <ListItemIcon  sx={{minWidth:"4vw"}}>
+          <DownloadIcon  sx={{color:"#f68f45",fontSize:"1.5vw"}} />
         </ListItemIcon>
-        <ListItemText primary="Download" />
+        <ListItemText disableTypography
+        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Download</Typography>}/>
       </ListItem>
       <ListItem >
-        <ListItemIcon>
-          <FavoriteIcon   sx={{color:"#f68f45"}}  />
+        <ListItemIcon  sx={{minWidth:"4vw"}}>
+          <FavoriteIcon    sx={{color:"#f68f45",fontSize:"1.5vw"}}   />
         </ListItemIcon>
-        <ListItemText primary="Favourites" />
+        <ListItemText disableTypography
+        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Favourites</Typography>}/>
       </ListItem>
       <ListItem >
-        <ListItemIcon>
-         <FolderIcon   sx={{color:"#f68f45"}}  />
+        <ListItemIcon  sx={{minWidth:"4vw"}}>
+         <FolderIcon   sx={{color:"#f68f45",fontSize:"1.5vw"}}  />
         </ListItemIcon>
-        <ListItemText primary="Local Files" />
+        <ListItemText disableTypography
+        primary={<Typography variant="body2" style={{ fontSize:"1.5vw", color: '#a3a3a3' }}>Local Files</Typography>}/>
       </ListItem>
     </List>
        

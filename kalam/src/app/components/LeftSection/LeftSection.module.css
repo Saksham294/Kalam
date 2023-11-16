@@ -1,28 +1,28 @@
-.leftSection{
-
-    height: 180vh;
+/* Default styles for all screen sizes */
+.leftSection {
+    min-height: 180vh;
     width: 20vw;
     background-color: #101011;
-    color: rgb(163, 163, 163);
+    color: #a3a3a3;
 }
 
-.features{
-    margin-top: 2vw;
-}
-.features>h6{
-    margin-left: 2vw;
-}
-
-.library{
+.features {
     margin-top: 2vw;
 }
 
-.library>h6{
+.features>h6 {
     margin-left: 2vw;
-
 }
 
-.list{
+.library {
+    margin-top: 2vw;
+}
+
+.library>h6 {
+    margin-left: 2vw;
+}
+
+.list {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -30,23 +30,79 @@
     border: 2px solid blue;
 }
 
-.header{
+.header {
     display: flex;
-    /* border:2px solid red; */
     padding-top: 2vw;
 }
 
-.logo{
-    /* border: 2px solid blueviolet; */
+.logo {
+    /* Adjust logo styles if needed */
 }
 
-.musicQueue{
-    /* border:2px solid yellow; */
-margin-left: 10vw;
-margin-top:0.5vw;
+.musicQueue {
+    margin-left: 8vw;
+    margin-top: 0.5vw;
 }
 
-.image{
-    height: 50px;
+.image {
+    max-height: 8.5vh;
     margin-left: 2vw;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .leftSection {
+        min-width: 20vw;
+    }
+
+    .musicQueue {
+        margin-left: 8vw;
+    }
+
+    .features {
+        margin-top: 3vw;
+    }
+    .features>h6{
+        font-size: 1.8vw;
+    }
+    .library>h6{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .leftSection {
+        width: 30vw;
+    }
+
+    .musicQueue {
+        margin-left: 14vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .leftSection {
+        min-width:20vw ;
+    }
+
+    .musicQueue {
+        margin-left: 15vw;
+    }
+
+    .image {
+        max-height: 6vh;
+    }
+}
+@media (max-width:425px){
+    .leftSection{
+
+    }
+    .musicQueue{
+        margin-left: 14vw;
+    }
+    .image{
+        max-height: 4vh;
+    }
+
+    
 }

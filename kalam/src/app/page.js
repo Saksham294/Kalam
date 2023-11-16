@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <div className={styles.description}>
-        {/* <LeftSection/>
-        <MiddleSection/>
+        <LeftSection/>
+        {/* <MiddleSection/>
         <RightSection/> */}
-        <StickyPlayer/>
+        {/* <StickyPlayer/> */}
       </div>
     </main>
   )

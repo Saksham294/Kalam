@@ -14,7 +14,7 @@
 .songContainer {
     min-width: 27vw;
     display: flex;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .songImage {
@@ -30,13 +30,13 @@
 
 .player {
     width: 60vw;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .misc {
     width: 20vw;
     display: flex;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .iconBtn {
