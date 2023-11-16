@@ -1,5 +1,6 @@
-.rightSection{
-    height: 180vh;
+/* Default styles for all screen sizes */
+.rightSection {
+    min-height: 180vh;
     width: 20vw;
     position: absolute;
     right: 0;
@@ -7,45 +8,42 @@
     color: rgb(163, 163, 163);
 }
 
-.header{
+.header {
     display: flex;
-    /* border: 10px solid green; */
     padding-top: 4vw;
 }
 
-.nameHeading{
-    /* border: 2px solid red; */
+.nameHeading {
     margin-left: 0.5vw;
     margin-top: 0.5vw;
+
 }
 
-.profile{
-    /* border: 2px solid red; */
+.profile {
     display: flex;
     margin-left: 1vw;
     left: 12px;
 }
 
-.notification{
-    /* border: 2px solid blue; */
-position: absolute;
+.notification {
+    position: absolute;
     right: 0;
     margin-right: 0.5vw;
     margin-top: 0.5vw;
 }
 
-.headings{
+.headings {
     display: flex;
 }
 
-.headings>h5{
+.headings>h5 {
     font-size: 1.2vw;
     margin-left: 1vw;
     margin-top: 2vw;
     color: aliceblue;
 }
 
-.headings>h6{
+.headings>h6 {
     font-size: 1vw;
     position: absolute;
     right: 0;
@@ -53,7 +51,7 @@ position: absolute;
     margin-right: 1vw;
 }
 
-.Btn{
+.Btn {
     background-color: #f68f45;
     margin-left: 3vw;
     margin-top: 2vw;
@@ -61,6 +59,46 @@ position: absolute;
     font-size: 1vw;
 }
 
-.Btn:hover{
+.Btn:hover {
     background-color: #ff8026;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .rightSection {
+        width: 25vw;
+    }
+    .Btn{
+        margin-left: 5.5vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .rightSection {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .rightSection {
+        max-width: 25vw;
+    }
+
+    .headings>h5,
+    .headings>h6,
+    .Btn {
+        font-size: 1vw;
+    }
+
+    .Btn {
+        margin-left: 5vw;
+        margin-top: 1vw;
+    }
+}
+
+@media (max-width:425px){
+    .Btn{
+        font-size: 0.8vw;
+        margin-left: 3.5vw;
+    }
 }

@@ -27,12 +27,12 @@ const RightSection = () => {
         <div className={rightSectionStyles.rightSection}>
             <div className={rightSectionStyles.header} >
                 <div className={rightSectionStyles.profile}>
-                    <AccountCircleIcon sx={{ fontSize: "50px" }} />
-                    <Typography variant='h6' className={rightSectionStyles.nameHeading}>Thomas Head</Typography>
+                    <AccountCircleIcon sx={{ fontSize: "4vw" }} />
+                    <Typography variant='h6' sx={{fontSize:"1.5vw"}} className={rightSectionStyles.nameHeading}>Thomas Head</Typography>
                 </div>
                 <div className={rightSectionStyles.notification}>
-                    <NotificationsNoneIcon fontSize='medium' />
-                    <ArrowDropDownIcon fontSize='medium' />
+                    <NotificationsNoneIcon sx={{fontSize:"1.8vw"}} />
+                    <ArrowDropDownIcon sx={{fontSize:"1.8vw"}}  />
                 </div>
             </div>
             <div className="recentlyPlayed">

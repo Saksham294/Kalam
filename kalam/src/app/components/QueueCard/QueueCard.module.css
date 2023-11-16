@@ -1,4 +1,4 @@
-.queueCardContainer{
+.queueCardContainer {
     /* border: 2px solid red; */
     display: flex;
     /* border: 2px solid red; */
@@ -6,28 +6,32 @@
 
 }
 
-.textContainer{
+.textContainer {
     /* border: 2px solid green; */
 
 }
 
-.textContainer>h5{
-margin-left: 1vw;
-color: aliceblue;
-font-size: 1vw;
-}
-.textContainer>h6{
-margin-left: 1.2vw;
-font-size: 0.8vw;
-color: rgb(87, 87, 87);
+.textContainer>h5 {
+    margin-left: 1vw;
+    color: aliceblue;
+    font-size: 1vw;
 }
 
-.image{
-    height: 50px;
-    width: 60px;
+.textContainer>h6 {
+    margin-left: 1.2vw;
+    font-size: 0.8vw;
+    color: rgb(87, 87, 87);
 }
 
-.queueCardContainer>h6{
+.image {
+    /*
+        give max height and widht
+    */
+
+    max-height: 3vw;
+}
+
+.queueCardContainer>h6 {
     position: absolute;
     right: 0;
     margin-right: 1vw;
