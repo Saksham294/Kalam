@@ -44,24 +44,24 @@ function LeftSection() {
       <List sx={{paddingLeft:"1vw"}}>
       <ListItem>
         <ListItemIcon sx={{minWidth:"4vw"}}>
-          <HomeIcon sx={{color:"#f68f45",fontSize:"1.5vw"}}   />
+          <HomeIcon sx={{color:"#f68f45",fontSize:"1.3vw"}}   />
         </ListItemIcon>
         <ListItemText disableTypography
-        primary={<Typography variant="body2" style={{fontSize:"1.5vw", color: '#a3a3a3' }}>Home</Typography>}/>
+        primary={<Typography variant="body2" style={{fontSize:"1.3vw", color: '#a3a3a3' }}>Home</Typography>}/>
       </ListItem>
       <ListItem >
         <ListItemIcon  sx={{minWidth:"4vw"}}>
-          <ExploreIcon  sx={{color:"#f68f45",fontSize:"1.5vw"}}   />
+          <ExploreIcon  sx={{color:"#f68f45",fontSize:"1.3vw"}}   />
         </ListItemIcon>
         <ListItemText disableTypography
-        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Discover</Typography>}/>
+        primary={<Typography variant="body2" style={{fontSize:"1.3vw",  color: '#a3a3a3' }}>Discover</Typography>}/>
       </ListItem>
       <ListItem >
         <ListItemIcon  sx={{minWidth:"4vw"}}>
-         <CollectionsIcon  sx={{color:"#f68f45",fontSize:"1.5vw"}}  />
+         <CollectionsIcon  sx={{color:"#f68f45",fontSize:"1.3vw"}}  />
         </ListItemIcon>
         <ListItemText disableTypography
-        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Collections</Typography>}/>
+        primary={<Typography variant="body2" style={{fontSize:"1.3vw",  color: '#a3a3a3' }}>Collections</Typography>}/>
       </ListItem>
     </List>
        
@@ -72,24 +72,24 @@ function LeftSection() {
       <List sx={{paddingLeft:"1vw"}}>
       <ListItem >
         <ListItemIcon  sx={{minWidth:"4vw"}}>
-          <DownloadIcon  sx={{color:"#f68f45",fontSize:"1.5vw"}} />
+          <DownloadIcon  sx={{color:"#f68f45",fontSize:"1.3vw"}} />
         </ListItemIcon>
         <ListItemText disableTypography
-        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Download</Typography>}/>
+        primary={<Typography variant="body2" style={{fontSize:"1.3vw",  color: '#a3a3a3' }}>Download</Typography>}/>
       </ListItem>
       <ListItem >
         <ListItemIcon  sx={{minWidth:"4vw"}}>
-          <FavoriteIcon    sx={{color:"#f68f45",fontSize:"1.5vw"}}   />
+          <FavoriteIcon    sx={{color:"#f68f45",fontSize:"1.3vw"}}   />
         </ListItemIcon>
         <ListItemText disableTypography
-        primary={<Typography variant="body2" style={{fontSize:"1.5vw",  color: '#a3a3a3' }}>Favourites</Typography>}/>
+        primary={<Typography variant="body2" style={{fontSize:"1.3vw",  color: '#a3a3a3' }}>Favourites</Typography>}/>
       </ListItem>
       <ListItem >
         <ListItemIcon  sx={{minWidth:"4vw"}}>
-         <FolderIcon   sx={{color:"#f68f45",fontSize:"1.5vw"}}  />
+         <FolderIcon   sx={{color:"#f68f45",fontSize:"1.3vw"}}  />
         </ListItemIcon>
         <ListItemText disableTypography
-        primary={<Typography variant="body2" style={{ fontSize:"1.5vw", color: '#a3a3a3' }}>Local Files</Typography>}/>
+        primary={<Typography variant="body2" style={{ fontSize:"1.3vw", color: '#a3a3a3' }}>Local Files</Typography>}/>
       </ListItem>
     </List>
        

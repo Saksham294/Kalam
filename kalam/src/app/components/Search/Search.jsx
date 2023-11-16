@@ -10,7 +10,7 @@ const Search = () => {
         <div className={searchStyles.searchContainer}>
            <form>
            <IconButton>
-          <SearchIcon />
+          <SearchIcon sx={{fontSize:"1.5vw"}} />
         </IconButton>
         <input className={searchStyles.search} type="text" placeholder="Search" />
            </form>

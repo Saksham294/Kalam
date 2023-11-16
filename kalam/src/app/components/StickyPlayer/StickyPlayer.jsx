@@ -85,7 +85,7 @@ const StickyPlayer = () => {
                 </IconButton>
                 </div>
                 <div className={stickyPlayerStyles.progressBar}>
-                <div class={stickyPlayerStyles.progress} id="music-progress"></div>
+                <div className={stickyPlayerStyles.progress} id="music-progress"></div>
 
                 </div>
             </div>
@@ -103,10 +103,10 @@ const StickyPlayer = () => {
                 */}
 
                 <div
-                    class={stickyPlayerStyles.volume}
+                    className={stickyPlayerStyles.volume}
                     id="volume-progress"
                 >
-                    <div class={stickyPlayerStyles.progress} id="volume-progress"></div>
+                    <div className={stickyPlayerStyles.progress} id="volume-progress"></div>
 
                 </div>
 

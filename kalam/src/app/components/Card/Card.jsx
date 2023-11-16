@@ -14,23 +14,23 @@ const inter = Inter({
     weight: ['400', '700'],
 })
 
-const Card = ({heading,subHeading,img}) => {
+const Card = ({ heading, subHeading, img }) => {
     return (
         <div className='productContainer'>
-                <div className="productImg">
-                    <img src={img}></img>
-                </div>
-                <a>
-                    <div className="productText">
-                        <Typography variant='h5' className={inter.className}>{heading}</Typography>
-                        <div className="productParaText">
-                            <p>{subHeading}</p>
-                        </div>
-
-                    </div>
-                </a>
-
+            <div className="productImg">
+                <img className='img' src={img}></img>
             </div>
+            <a>
+                <div className="productText">
+                    <Typography variant='h5' className={inter.className}>{heading}</Typography>
+                    <div className="productParaText">
+                        <p>{subHeading}</p>
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
     )
 }
 

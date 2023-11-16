@@ -1,120 +1,204 @@
-.middleContainer{
-    /* border: 2px solid red; */
-    width: 60vw;
-    height: 180vh;
+/* Default styles for all screen sizes */
+.middleContainer {
+    max-width: 60vw;
+    padding-right: 2vw;
+    /* border: 2px solid blue; */
+    min-height: 180vh;
     background-color: rgb(8, 7, 7);
-
 }
 
-.middle{
+.middle {
     position: relative;
 }
 
-.middle .listenBtn{
+.middle .listenBtn {
     position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #000000;
-  color: white;
-  opacity: 0.7;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: 0.2s ease-in;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: white;
+    opacity: 0.7;
+    font-size: 1vw; /* Adjust the value as needed */
+    padding: 2% 4%; 
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.2s ease-in;
 }
 
-.listenBtn:hover{
+.listenBtn:hover {
     opacity: 1;
-
-}
-.listenBtn{
-
 }
 
-
-.header{
+.header {
     display: flex;
-    /* border: 2px solid red; */
 }
 
-.arrowBtn{
+.arrowBtn {
     color: #f68f45;
     margin-top: 3.5vw;
     font-size: 2vw;
     transition: 0.1s ease-in;
 }
 
-.arrowBtn:hover{
+.arrowBtn:hover {
     cursor: pointer;
     background-color: #f68f4547;
-    border-radius: 30px
-
+    border-radius: 30px;
 }
 
-.dots{
+.dots {
     color: #f68f45;
-    /* border: 2px solid tomato; */
-    margin-left: 2.5vw;
+    margin-left: 1vw;
+margin-right: 1vw;
     border-radius: 30px;
     transition: 0.2s ease-in;
 }
-.dots:hover{
+
+.dots:hover {
     cursor: pointer;
     background-color: #f68f4547;
 }
 
-.image{
-    height: 400px;
-    width: 850px;
+.image {
+    height: 57.47vh;
+    width: 52vw;
     border-radius: 20px;
     margin-left: 3vw;
     margin-top: 1vw;
 }
 
-.welcome{
+.welcome {
     color: white;
 }
 
-.welcomeHeadings{
+.welcomeHeadings {
     display: flex;
 }
 
-.welcomeHeadings>h4{
+.welcomeHeadings>h4 {
     margin-left: 4vw;
     margin-top: 3vw;
     font-weight: 600;
     font-size: 1.8vw;
 }
 
-.welcomeHeadings>h6{
-    margin-left: 36vw;
+.welcomeHeadings>h6 {
+    margin-left: 28vw;
     margin-top: 3.5vw;
     font-size: 1vw;
     color: #585858;
 }
 
-.musicQueue{
+.musicQueue {
     margin-left: 3vw;
 }
 
-.newReleaseHeading{
+.newReleaseHeading {
     display: flex;
 }
 
-.newReleaseHeading>h4{
+.newReleaseHeading>h4 {
     margin-left: 4vw;
     margin-top: 3vw;
     font-weight: 600;
     font-size: 1.8vw;
 }
 
-.newReleaseHeading>h6{
-    margin-left: 30vw;
+.newReleaseHeading>h6 {
+    margin-left: 23vw;
     margin-top: 3.5vw;
     font-size: 1vw;
     color: #585858;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .middleContainer {
+        width: 70vw;
+    }
+    .image{
+        width: 54vw;
+    }
+
+    .listenBtn{
+        margin-top: 2vw;
+    }
+
+    .welcomeHeadings>h6 {
+        margin-left: 35vw;
+    }
+    .newReleaseHeading>h6{
+        margin-left: 30vw;
+    
+    }
+}
+
+@media (max-width: 992px) {
+    .middleContainer {
+        width: 80vw;
+    }
+
+    .welcomeHeadings>h6,
+    .newReleaseHeading>h6 {
+        margin-left: 10vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .middleContainer {
+        width: 48vw;
+
+    }
+    .image{
+        width: 45vw;
+height: 50vh;
+    }
+
+    .welcomeHeadings{
+margin-left: 3vw;
+    }
+    .musicQueue{
+        margin-left: 2vw;
+    }
+    .newReleaseHeading>h4{
+        font-size: 1.5vw;
+    }
+    .welcomeHeadings>h6 {
+        font-size: 1.2vw;
+        margin-left: 30vw;
+        margin-top: 0;
+    }
+    .newReleaseHeading>h6{
+        font-size: 1.5vw;
+        margin-left: 25vw;
+        margin-top: 0;
+    }
+
+    .welcomeHeadings>h4 {
+        margin-left: 1vw;
+        margin-top: 2vw;
+        font-size: 1.5vw;
+    }
+
+    .welcomeHeadings>h6,
+    .newReleaseHeading>h6 {
+        margin-top: 2.5vw;
+    }
+}
+
+@media (max-width:425px){
+    .image{
+        height: 30vw;
+width: 42vw;
+    }
+}
+
+@media (max-width:375px){
+
+.arrowBtn{
+    font-size: 0.5rem;
+}
 }

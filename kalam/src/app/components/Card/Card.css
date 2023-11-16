@@ -12,6 +12,8 @@ a{
     transition:  0.3s ease-in-out;
     /* border: 2px solid red; */
     overflow: hidden; 
+    min-height: 20vh;
+    min-width: 100px;
 }
 
 .productContainer:hover {
@@ -21,8 +23,8 @@ a{
 }
 
 .productContainer>.productImg>img {
+    max-height: 20vh;
     width: 150px;
-    height: 150px;
     padding: 0.1rem;
     padding-top: 0.1rem;
     border-radius: 15px 15px 5px 5px;
@@ -34,7 +36,6 @@ a{
 }
 
 .productParaText{
-
     font-size: 1rem;
     color: #6a6a6a;
     margin-left: 1rem;
@@ -46,8 +47,6 @@ a{
     -webkit-box-orient: vertical;
 }
 .productContainer>a>.productText>h5 {
-
-
     padding-left: 1rem;
     margin-top: 1rem;
     font-weight: 400;
@@ -63,4 +62,86 @@ a{
     font-size: 1.5rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
+}
+
+@media (max-width:768px){
+    .productContainer{
+        max-height: 50px;
+        max-width: 100px;
+        margin: 0.5rem;
+        margin-top: 1rem;
+    }
+    .productContainer>.productImg>img{
+        max-width: 100px;
+        max-height: 50px;
+    }
+    .productText{
+        width: 80px;
+    }
+    .productParaText{
+        font-size: 0.8rem;
+    }
+    .productContainer>a>.productText>h5{
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+   .productParaText> p{
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+    }
+}
+
+@media (max-width:425px){
+    .productContainer{
+        max-height: 50px;
+        max-width: 80px;
+        /* border: 1px solid forestgreen; */
+        margin-left: 6vw;
+
+    }   
+    .productContainer>.productImg>img{
+        max-width:96px;
+        max-height: 50px;
+    }
+    /* .productText{
+        width: 80px;
+    }
+    .productParaText{
+        font-size: 0.8rem;
+    } */
+    .productContainer>a>.productText>h5{
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+   .productParaText> p{
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+    }
+}
+
+@media (max-width:375px){
+    .productContainer{
+
+        margin: 0.1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .productContainer>.productImg>img{
+        max-width: 100px;
+        max-height: 50px;
+    }
+    .productText{
+        width: 80px;
+    }
+    .productParaText{
+        font-size: 0.8rem;
+    }
+    .productContainer>a>.productText>h5{
+        font-size: 0.8rem;
+        margin-top: 0;
+    }
+   .productParaText> p{
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+    }
 }

@@ -28,7 +28,7 @@ const RightSection = () => {
             <div className={rightSectionStyles.header} >
                 <div className={rightSectionStyles.profile}>
                     <AccountCircleIcon sx={{ fontSize: "4vw" }} />
-                    <Typography variant='h6' sx={{fontSize:"1.5vw"}} className={rightSectionStyles.nameHeading}>Thomas Head</Typography>
+                    <Typography variant='h6' sx={{fontSize:"1.3vw"}} className={rightSectionStyles.nameHeading}>Thomas Head</Typography>
                 </div>
                 <div className={rightSectionStyles.notification}>
                     <NotificationsNoneIcon sx={{fontSize:"1.8vw"}} />

@@ -131,18 +131,19 @@
         width: 50vw;
     }
 
-    .progressBar{
+    .progressBar {
         margin-left: 0;
     }
 
-    .songIcons{
+    .songIcons {
         margin-left: 1.5vw;
     }
 
     .misc {
         width: 20vw;
     }
-    .volume{
+
+    .volume {
         margin-top: 3.5vw;
     }
 
@@ -164,17 +165,19 @@
     .player {
         width: 70vw;
     }
+
     .misc {
         width: 30vw;
     }
-    .songIcons{
+
+    .songIcons {
         margin-left: 0vw;
     }
 
-    .iconBtn{
+    .iconBtn {
         font-size: 0.5vw;
-margin-top: 0;
-margin-left: 0;
+        margin-top: 0;
+        margin-left: 0;
     }
 
 }
@@ -188,7 +191,7 @@ margin-left: 0;
     .misc {
         width: 100%;
     }
-    
+
     .playerBtn {
         font-size: 4vw;
     }
@@ -196,33 +199,34 @@ margin-left: 0;
     .pauseBtn {
         font-size: 6vw;
     }
-    
+
     .progressBar,
     .volume {
-       display: none;
+        display: none;
     }
 
     .progress-text {
         font-size: 2vw;
     }
 
-    .songIcons{
-        margin-top: 0;
+    .songIcons {
+        margin-top: 2vw;
     }
 
-    .songImage{
+    .songImage {
         height: 5vh;
     }
-    .iconBtn{
+
+    .iconBtn {
         margin-left: 1vw;
-        font-size: 1vw;
+        font-size: 2vw;
     }
 }
 
 @media screen and (max-width: 425px) {
     .stickyContainer {
-display: none;
+        display: none;
     }
 
-   
+
 }
