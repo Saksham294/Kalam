@@ -70,7 +70,8 @@ const StickyPlayer = () => {
                     <LoopIcon className={stickyPlayerStyles.playerBtn} color='secondary' />
                 </IconButton>
                 </div>
-                <div className={stickyPlayerStyles.playerBar}>
+                <div className={stickyPlayerStyles.progressBar}>
+                <div class={stickyPlayerStyles.progress} id="music-progress"></div>
 
                 </div>
             </div>
@@ -82,6 +83,20 @@ const StickyPlayer = () => {
                         <VolumeMuteIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
                     </IconButton>
                 }
+               {/**
+                * 
+                * add a slider for volume control
+                */}
+
+                <div
+                    class={stickyPlayerStyles.volume}
+                    id="volume-progress"
+                >
+                    <div class={stickyPlayerStyles.progress} id="volume-progress"></div>
+                    
+                </div>
+
+
                 <IconButton >
                     <KeyboardVoiceIcon className={stickyPlayerStyles.iconBtn} color='secondary' />
                 </IconButton>
