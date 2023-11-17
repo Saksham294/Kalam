@@ -199,7 +199,7 @@
 
 @media (max-width:425px) {
     .middleContainer {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100vw;
         max-width: 100vw;
 
