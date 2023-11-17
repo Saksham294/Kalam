@@ -95,7 +95,8 @@
 }
 @media (max-width:425px){
     .leftSection{
-
+        display: none;
+        width: 0;
     }
     .musicQueue{
         margin-left: 14vw;

@@ -104,8 +104,8 @@
 
 @media (max-width:425px){
     .rightSection{
-        width: 100vw;
-        min-height: 241.5vh;
+        display: none;
+        width: 0;
 
         /* border: 2px solid red; */
     }

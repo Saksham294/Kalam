@@ -20,8 +20,9 @@
     background-color: #000000;
     color: white;
     opacity: 0.7;
-    font-size: 1vw; /* Adjust the value as needed */
-    padding: 2% 4%; 
+    font-size: 1vw;
+    /* Adjust the value as needed */
+    padding: 2% 4%;
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -52,7 +53,7 @@
 .dots {
     color: #f68f45;
     margin-left: 1vw;
-margin-right: 1vw;
+    margin-right: 1vw;
     border-radius: 30px;
     transition: 0.2s ease-in;
 }
@@ -119,20 +120,22 @@ margin-right: 1vw;
     .middleContainer {
         width: 70vw;
     }
-    .image{
+
+    .image {
         width: 54vw;
     }
 
-    .listenBtn{
+    .listenBtn {
         margin-top: 2vw;
     }
 
     .welcomeHeadings>h6 {
         margin-left: 35vw;
     }
-    .newReleaseHeading>h6{
+
+    .newReleaseHeading>h6 {
         margin-left: 30vw;
-    
+
     }
 }
 
@@ -152,26 +155,31 @@ margin-right: 1vw;
         width: 48vw;
 
     }
-    .image{
+
+    .image {
         width: 45vw;
-height: 50vh;
+        height: 50vh;
     }
 
-    .welcomeHeadings{
-margin-left: 3vw;
+    .welcomeHeadings {
+        margin-left: 3vw;
     }
-    .musicQueue{
+
+    .musicQueue {
         margin-left: 2vw;
     }
-    .newReleaseHeading>h4{
+
+    .newReleaseHeading>h4 {
         font-size: 1.5vw;
     }
+
     .welcomeHeadings>h6 {
         font-size: 1.2vw;
         margin-left: 30vw;
         margin-top: 0;
     }
-    .newReleaseHeading>h6{
+
+    .newReleaseHeading>h6 {
         font-size: 1.5vw;
         margin-left: 25vw;
         margin-top: 0;
@@ -189,16 +197,65 @@ margin-left: 3vw;
     }
 }
 
-@media (max-width:425px){
-    .image{
-        height: 30vw;
-width: 42vw;
+@media (max-width:425px) {
+    .middleContainer {
+        border: 2px solid red;
+        width: 100vw;
+        max-width: 100vw;
+
+    }
+
+    .image {
+        height: 40vw;
+        width: 93vw;
+    }
+
+ .listenBtn {
+        left: 10%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #000000;
+        color: white;
+        opacity: 1;
+    }
+    .dots{
+        margin-left: 20vw;
+    }
+
+    .musicQueue{
+        margin-left: 0;
+    
+    }
+
+    .welcomeHeadings>h4 {
+        margin-left: 1vw;
+        margin-top: 2.5vw;
+        font-size: 3.5vw;
+    }
+    .welcomeHeadings>h6{
+        margin-left: 58vw;
+        margin-top: 2.5vw;
+        font-size: 2vw;
+    
+    }
+
+    .newReleaseHeading>h4 {
+        margin-left: 5vw;
+        margin-top: 2.5vw;
+        font-size: 3.5vw;
+    }
+
+    .newReleaseHeading>h6 {
+        margin-left:45vw;
+        margin-top: 2.5vw;
+        font-size: 2vw;
     }
 }
 
-@media (max-width:375px){
+@media (max-width:375px) {
 
-.arrowBtn{
-    font-size: 0.5rem;
-}
+    .arrowBtn {
+        font-size: 0.5rem;
+    }
 }
