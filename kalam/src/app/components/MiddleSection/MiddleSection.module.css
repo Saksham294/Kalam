@@ -1,4 +1,6 @@
 /* Default styles for all screen sizes */
+
+
 .middleContainer {
     max-width: 60vw;
     padding-right: 2vw;
@@ -118,15 +120,17 @@
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
     .middleContainer {
-        max-width:200vw;
-        width:200vw;
-height:100%;
+
+        width: 200vw;
+        height: 100%;
     }
 
     .image {
-        width:54vw;
+        width: 54vw;
     }
-
+    .arrowBtn{
+        font-size: 1vw;
+    }
     .listenBtn {
         margin-top: 2vw;
     }
@@ -150,21 +154,36 @@ height:100%;
     .newReleaseHeading>h6 {
         margin-left: 10vw;
     }
+
+    .image{
+        width: 40vw;
+        height: 30vw;
+    }
+
+    .listenBtn{
+
+        margin-left: -5vw;
+    }
 }
 
 @media (max-width: 768px) {
     .middleContainer {
         width: 48vw;
 
+
     }
 
     .image {
         width: 45vw;
-        height: 50vh;
+        height: 45vh;
     }
 
     .welcomeHeadings {
         margin-left: 3vw;
+    }
+
+    .listenBtn{
+        margin-left: 2vw;
     }
 
     .musicQueue {
@@ -197,25 +216,37 @@ height:100%;
     .newReleaseHeading>h6 {
         margin-top: 2.5vw;
     }
+
+    .dots{
+        margin-left: 5vw;
+    }
 }
+
+
 
 @media (max-width:425px) {
     .middleContainer {
         /* border: 2px solid red; */
-        width:200vw;
-
-
+        width: 200vw;
+        max-width: 200vw;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 20vw;
+    }
+    .header{
+        margin-top: 2vw;
     }
 
     .image {
         height: 88vh;
         margin-top: 20vw;
-        width:180vw;
+        width: 180vw;
 
 
     }
 
- .listenBtn {
+    .listenBtn {
         left: 10%;
         top: 80%;
         transform: translate(-50%, -50%);
@@ -223,14 +254,16 @@ height:100%;
         background-color: #000000;
         color: white;
         opacity: 1;
-    }
-    .dots{
-        margin-left: 50vw;
+        margin-left: -5vw;
     }
 
-    .musicQueue{
+    .dots {
+        margin-left: 1vw;
+    }
+
+    .musicQueue {
         margin-left: 0;
-    
+
     }
 
     .welcomeHeadings>h4 {
@@ -238,11 +271,12 @@ height:100%;
         margin-top: 2.5vw;
         font-size: 3.5vw;
     }
-    .welcomeHeadings>h6{
+
+    .welcomeHeadings>h6 {
         margin-left: 58vw;
         margin-top: 2.5vw;
         font-size: 2vw;
-    
+
     }
 
     .newReleaseHeading>h4 {
@@ -252,7 +286,7 @@ height:100%;
     }
 
     .newReleaseHeading>h6 {
-        margin-left:45vw;
+        margin-left: 45vw;
         margin-top: 2.5vw;
         font-size: 2vw;
     }
@@ -260,6 +294,13 @@ height:100%;
 
 @media (max-width:375px) {
 
+    .big {
+        max-width: 100vw;
+        width: 10vw;
+
+
+
+    }
     .arrowBtn {
         font-size: 0.5rem;
     }

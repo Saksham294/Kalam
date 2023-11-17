@@ -104,10 +104,12 @@
 
 @media (max-width:425px){
     .rightSection{
-        display: none;
-        width: 0;
 
-        /* border: 2px solid red; */
+        width: 0;
+        margin:0;
+        padding:0;
+
+display:none;
     }
     .Btn{
         font-size: 0.2vw;

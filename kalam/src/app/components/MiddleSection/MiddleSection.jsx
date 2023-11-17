@@ -23,6 +23,7 @@ const MiddleSection = () => {
     })
 
     return (
+        <div className={MiddleSectionStyles.big}>
         <div className={MiddleSectionStyles.middleContainer}>
             <div className={MiddleSectionStyles.header}>
                 <div className="moveBtns">
@@ -79,6 +80,7 @@ const MiddleSection = () => {
                 </div>
             </div>
             <div className={MiddleSectionStyles.newReleases}></div>
+        </div>
         </div>
     )
 }
